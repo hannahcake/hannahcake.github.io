@@ -1,0 +1,39 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Hannah's Cake</title>
+	<style>
+		body {
+			width: 99vw;
+			height: 99vh;
+			margin: 0;
+			overflow: hidden;
+			display: flex;
+			justify-content: center;
+			background-color: #f4faff;
+		}
+		img {
+			width: 800px;
+			height: 533px;
+			align-self: center;
+			box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+			border-radius: 5px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<img src="IMG_6616.JPG" alt="">
+	<script>
+		var count = 0
+		document.querySelector("img").onclick = function() {
+			count++;
+			if ( count == 3 ) {
+				this.src = "ahhh.jpeg"
+				this.style.height = "640"
+				this.style.width = "360"
+			}
+		}
+	</script>
+</body>
+</html>
